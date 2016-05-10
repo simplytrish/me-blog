@@ -4,13 +4,21 @@ class PostsController < ApplicationController
 	end
 
 	def new
+		@post = Post.new
 	end
 
+	#If-else, so that: If you click save and there is an error
+	#and the post doesn't save, then render that create post page again.
+	#Doing a render instead of redirect will keep all the indo you added
+	#to the fields when creating the post.
 	def create
 		@post = Post.new(post_params)
-		@post.save
-
-		redirect_to @post
+		
+		if @post.save
+			redirect_to @post
+		else
+			render 'new'
+		end
 	end
 
 	def show
