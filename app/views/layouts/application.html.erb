@@ -6,12 +6,15 @@
   <%= stylesheet_link_tag 'application', 'http://fonts.googleapis.com/css?family=Raleway:400,700' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 	<div class="sidebar">
 		<div class="logo">
 			<%= link_to root_path do %>
-				<%= image_tag "delta.png", :size => '50x50' %>
+				<%= image_tag "succ1.jpg", :size => '50x50' %>
 			<% end %>
 		</div>
 
@@ -48,22 +51,28 @@
 	</div>
 
 	<div class="main_content">
+	
 		<div class="header">
-			<% if current_page?(root_path) %>
-			 <p>All Notes</p>
-			<% elsif current_page?(about_path) %>
-			 <p>About</p>
-			<% else %>
-				<%= link_to "Back to Notes", root_path %>
-			<% end %>
-
-			<% if user_signed_in? %>
-				<div class="buttons">
-					<button class="button"><%= link_to "New Post", new_post_path%></button>
-					
-					<%= link_to 'log out', destroy_user_session_path, :method => :delete, class: 'button' %>
+			<div class="row">
+				<% if current_page?(root_path) %>
+				 <div class="col-md-8"><p>All Notes</p>
+					<% elsif current_page?(about_path) %>
+					 <p>About</p>
+					<% else %>
+						<%= link_to "Back to Notes", root_path %>
+					<% end %>
 				</div>
-			<% end %>
+
+				<% if user_signed_in? %>
+					<div class="col-md-4">
+						<div class="button">
+						<button class="btn btn-default" type="button"><%= link_to "New Post", new_post_path%></button>
+						
+						<button class="btn btn-default" type="button"><%= link_to 'log out', destroy_user_session_path, :method => :delete%></button>					
+						</div>
+					</div>
+				<% end %>
+			</div>
 		</div>
 
 		<!--Flash message to show after an action
@@ -73,6 +82,7 @@
 		<% end %>
 
 		<%= yield %>
+	
 	</div>
 
 
