@@ -114,14 +114,15 @@ li a:active{
 	text-decoration: none;
 }
 		
-.buttons {
+/*.buttons {
 	float: right;
 	margin-top: -6px;
-}
+}*/
 
 .button {
 	font-size: .8em;
-	margin-left: .5em;
+	/*margin-left: 1em;*/
+	padding-right: 1em;
 }
 
 
@@ -130,6 +131,7 @@ li a:active{
 		padding: 2em;
 		width: 500px;
      	margin: 0 auto;
+     	overflow: auto;
 }
 
 .title {
@@ -184,7 +186,8 @@ li a:active{
 
 /* Post Content (show page) */
 .post_content {
-	padding: 1em 3em;
+	padding-top: 1em;
+	padding-left: 15em;
 }
 
 .title {
@@ -259,7 +262,8 @@ li a:active{
 
 	
 .page_wrapper {
-	padding: 2em;
+	/*padding: 2em;*/
+	padding-left: 15em;
 }
 		
 .profile_image {
