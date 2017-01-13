@@ -20,6 +20,19 @@
 		</p>
 
 		<p>
+			<%= f.label :cover %><br>
+			<%= f.file_field :cover %>
+		</p>
+
+		<p>
+    		<label>
+      		<%= f.check_box :remove_cover %>
+      		Remove cover image
+    		</label>
+  		</p>
+
+
+		<p>
 			<%= f.submit %>
 		</p>
 	<% end %>
