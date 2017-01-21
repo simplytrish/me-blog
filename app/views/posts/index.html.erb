@@ -6,12 +6,12 @@
 		<div class="row">
 
 			<div class="col-lg-6">
-				<p>
+				
 				<%= image_tag post.cover.url if post.cover?%> 
-				</p>
+				
 			</div>
 
-			<div class="col-lg-6">
+			<div class="col-lg-6 post-info">
 				<h1 class="title"><%= link_to post.title, post %></h1>
 				<p class="date"><%= post.created_at.strftime("%B, %d, %Y") %></p>
 				<p class="profile"><%= post.profile %></p>

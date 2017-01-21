@@ -19,6 +19,8 @@
 
  html, body {
 	font-family: 'Raleway', sans-serif;
+	overflow-x: hidden;
+	background: #f4f4f4;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -31,10 +33,6 @@ a {
 }
 
 /* NEW STYLE BEGIN */
-
-   	body {
-    overflow-x: hidden;
- }
 
 /* Toggle Styles */
 
@@ -58,9 +56,9 @@ a {
     height: 100%;
     margin-left: -200px;
     overflow-y: auto;
-    background: #ededed;
+    background: #dcd0c0;
 	padding: 7em 0 0 0;
-	border-right: 1px solid #d6dce0;
+	border-right: 1px solid #dcd0c0;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -171,9 +169,9 @@ a {
 	left: 0;
 	top: 0;
 	height: 100%;
-	background: #ededed;
+	background: #dcd0c0;
 	padding: 7em 0 0 0;
-	border-right: 1px solid #d6dce0;
+	border-right: 1px solid #dcd0c0;
 }
 
 .logo {
@@ -195,15 +193,16 @@ li {
 	padding: 1em 0;
 }
 
-.list_border{
+/*.list_border{
 	border-bottom: 1.5px solid #d6dce0;
 	transform: rotate(-10deg);
 	-webkit-transform: rotate(-10deg);
     -moz-transform: rotate(-10deg);
-}
+}*/
 
 li a {
 	color: #9eafba;
+	font-size: 20px;
 	text-decoration: none;
 	transition: all .4s ease;
 }
@@ -225,8 +224,8 @@ li a:active{
 }
 
 .header {
-	border-bottom: 1px solid #d6dce0;
-	background: #f5f7f9;
+	border-bottom: 1px solid #f4f4f4;
+	background: #f4f4f4;
 	color: #9eafba;
 	height: 60px;
 	line-height: 60px;
@@ -262,7 +261,13 @@ li a:active{
 
 /* Post index page */
 .post_wrapper {
-   	padding-left: 20px;
+   	/*padding-left: 20px;*/
+   	
+}
+
+.post-info {
+	background: url(restaurant_icons.png);
+	height: 414px;
 }
 
 .title {
