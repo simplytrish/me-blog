@@ -28,8 +28,10 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 # carrierwave for uploader
 gem 'carrierwave'
-
+# rmagick for image processing
 gem 'rmagick'
+# text editor for posts
+gem 'tinymce-rails'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

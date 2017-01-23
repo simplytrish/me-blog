@@ -358,13 +358,13 @@ li a:active{
 				width: 50%;
 			}
 
-	
+*/
+
 .page_wrapper {
-	/*padding: 2em;
-	padding-left: 15em;
+	padding-left: 25px;
 }
 		
-.profile_image {
+/*.profile_image {
 	width: 300px;
 	float: left;
 	margin-right: 2em;
@@ -375,7 +375,6 @@ li a:active{
 	border-radius: 0.35em;
 }
 		
-
 
 #content h1 {
 	font-weight: 500;
@@ -390,33 +389,37 @@ li a:active{
 	color: #33acb7;
 	font-weight: 700;
 	text-decoration: none;
-}
-*/
+}*/
+
 .links {
 		margin: 2em 0;
 }
 
 	input[type="text"], input[type="email"], input[type="password"], textarea {
-		width: 90%;
+		width: 500px;
 		border: 1px solid #d6dce0;
-		border-radius: .35em;
+		/*border-radius: .35em;*/
 		margin-top: 10px;
 		padding: .5em 1em;
 		line-height: 1.75;
 	}
+
 	input[type="text"] {
 		height: 35px;
 	}
+
 	textarea {
 		min-height: 180px;
 	}
+
+
 	input[type="submit"] {
 		outline: none;
 		background: transparent;
 		border: 1px solid #d6dce0;
 		padding: .5em 1.5em;
 		font-size: 1.1em;
-		border-radius: 1.5em;
-		margin-left: .5em;
+		/*border-radius: 1.5em;*/
+		/*margin-left: .5em;*/
 }
-		
+	
