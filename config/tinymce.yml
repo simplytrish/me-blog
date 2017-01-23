@@ -1,8 +1,9 @@
 width: 500
 toolbar:
-  - styleselect | bold italic | undo redo
+  - styleselect | fontsizeselect | bold italic forecolor backcolor | undo redo
   - image | link
 plugins:
   - image
   - link
+  - textcolor
 

@@ -252,7 +252,8 @@ li a:active{
 }
 
 
-/* Post index page */
+/**** INDEX PAGE STYLE ****/
+
 .post_wrapper {
    	/*padding-left: 20px;*/   	
 }
@@ -260,10 +261,13 @@ li a:active{
 .post-info {
 	background: url(restaurant_icons.png);
 	height: 580px;
+	font-weight: 500;
+	padding: 8rem;
 }
 
 .title {
 	margin-bottom: 0;
+	text-transform: uppercase;
 }
 
 .title a {
@@ -282,8 +286,9 @@ li a:active{
 	margin: .5em 0 0 0;
 }
 
+/**** INDEX PAGE STYLE END ****/
 
-/* Post Content (show page) */
+/**** SHOW PAGE STYLE ****/
 .post_content {
 	padding-left: 20px;
 }
@@ -305,6 +310,8 @@ li a:active{
 	color: #9eafba;
 	margin: .5em 0 2em 0;
 }
+
+/**** SHOW PAGE STYLE END ****/
 
 /*Comments
 
