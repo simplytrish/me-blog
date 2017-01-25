@@ -291,6 +291,7 @@ li a:active{
 /**** SHOW PAGE STYLE ****/
 .post_content {
 	padding-left: 20px;
+	border-top: 1px solid;
 }
 
 .title {
@@ -304,6 +305,13 @@ li a:active{
 .body {
 	font-size: 1.1em;
 	line-height: 1.75;
+	
+}
+
+#body_recipe {
+	border: 1px solid;
+	width: 70%;
+	padding: 10px;
 }
 
 .date_and_author {
