@@ -10,72 +10,82 @@
   <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
-	<div class="sidebar">
-		<div class="logo">
-			<%= link_to root_path do %>
-				<%= image_tag "succ1.jpg", :size => '50x50' %>
+
+	<div id="wrapper">
+		
+		<!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    Branding
+                </li>
+				<li><%= link_to "Home", root_path %></li>
+				<li class="list_border"></li>
+				<li><%= link_to "About", about_path %></li>
+				<li class="list_border"></li>
+				<li><a href="https://www.tadaku.com/my/menus">Cooking Classes</a></li>
+				<!--<li><%= link_to "https://www.tadaku.com/my/menus", :target => "_blank" %></li>-->
+				<li class="list_border"></li>
+				<li><a href="">Medium</a></li>
+				<li class="list_border"></li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+
+			<!--
+			<% if !user_signed_in? %>
+				<p class="sign_in"><%= link_to "Admin login", user_session_path %></p>
 			<% end %>
-		</div>
-
-		<ul>
-			<!--<li class ="category">Websites</li>-->
-			<li><%= link_to "Notes", root_path %></li>
-			<li class="list_border"></li>
-			<li><%= link_to "About", about_path %></li>
-			<li class="list_border"></li>
-			<li><a href="https://www.linkedin.com/in/tracey-norkjaer-1a408641?trk=nav_responsive_tab_profile" target="_blank">LinkedIn</a></li>
-			<li class="list_border"></li>
-			<li><a href="https://www.facebook.com/kaelo.nrkj" target="_blank">Facebook</a></li>
-			<li class="list_border"></li>
-			<li><a href="">Medium</a></li>
-			<li class="list_border"></li>
-		</ul>
+			-->
 
 
-		<!--
-		<% if !user_signed_in? %>
-			<p class="sign_in"><%= link_to "Admin login", user_session_path %></p>
-		<% end %>
-		-->
-	
+		 <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+            	<div class="row">
+            		<div class="col-lg-12 nopadding">
+	            		
+	            		<div class="header">
+		            		<% if current_page?(root_path) %>
+							 <p>All Posts</p>
+								<% elsif current_page?(about_path) %>
+								 <p>About</p>
+								<% else %>
+									<p id="postlink"><%= link_to "All Posts", root_path %></p>
+								<% end %>
+					
+							<% if user_signed_in? %>
+								<div class="button">
+									<button class="btn btn-default" type="button"><%= link_to "New Post", new_post_path%></button>
+									<button class="btn btn-default" type="button"><%= link_to 'log out', destroy_user_session_path, :method => :delete%></button>	
+								</div>
+							<% end %>
+						</div>        	
+	          		</div>
+           
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!--<a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+			<!--Flash message to show after an action
+			What is the difference between <%= %> and without the = sign? -->
+			<% flash.each do |name, msg| %>
+				<%= content_tag(:div, msg, class: "alert")%>
+			<% end %>
+
+			<%= yield %>
+		
+
 	</div>
-
-	<div class="main_content">
-	
-		<div class="header row">
-				<% if current_page?(root_path) %>
-				 <div class="col-md-8"><p>All Notes</p>
-					<% elsif current_page?(about_path) %>
-					 <p>About</p>
-					<% else %>
-						<%= link_to "Back to Notes", root_path %>
-					<% end %>
-				</div>
-
-				<% if user_signed_in? %>
-				<div class="col-md-4">
-					<div class="button">
-					<button class="btn btn-default" type="button"><%= link_to "New Post", new_post_path%></button>
-							
-					<button class="btn btn-default" type="button"><%= link_to 'log out', destroy_user_session_path, :method => :delete%></button>	
-					</div>				
-				</div>
-				<% end %>
-		</div>
-	</div>
-
-		<!--Flash message to show after an action
-		What is the difference between <%= %> and without the = sign? -->
-		<% flash.each do |name, msg| %>
-			<%= content_tag(:div, msg, class: "alert")%>
-		<% end %>
-
-		<%= yield %>
-	
-	</div>
-
-
 
 </body>
 </html>

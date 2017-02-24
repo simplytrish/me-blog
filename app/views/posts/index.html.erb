@@ -2,14 +2,23 @@
 <!-- Then link the title to the post -->
 <% @posts.each do |post| %>
 	<div class="post_wrapper">
-		
-		<p>
-			<%= image_tag post.cover.url if post.cover?%> 
-		</p>
 
+		<div class="row">
 
-		<h2 class="title"><%= link_to post.title, post %></h2>
-		<p class="date"><%= post.created_at.strftime("%B, %d, %Y") %></p>
+			<div class="col-lg-6">
+				
+				<%= image_tag post.cover.url if post.cover?%> 
+				
+			</div>
+
+			<div class="col-lg-6 post-info">
+				<h1 class="title"><%= link_to post.title, post %></h1>
+				<p class="date"><%= post.created_at.strftime("%B, %d, %Y") %></p>
+				<p class="profile"><%=raw post.profile %></p>
+				<p class="description"><%=raw post.description %></p>
+			</div>
+
+		</div>
 	</div> 
 <% end %>
 
