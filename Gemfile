@@ -32,6 +32,14 @@ gem 'carrierwave'
 gem 'rmagick'
 # text editor for posts
 gem 'tinymce-rails'
+# handle images
+#gem 'cloudinary'
+gem 'carrierwave-dropbox'
+
+#handle env variables
+gem 'figaro'
+
+gem 'dropbox-sdk'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
