@@ -7,9 +7,12 @@
 
 			<div class="col-lg-6">
 				
-				<%= image_tag post.cover.url if post.cover?%>
+				<%= link_to post do %>
+					<%= image_tag post.cover.url if post.cover?%>
+				<% end %>
 				
 			</div>
+
 
 			<div class="col-lg-6 post-info">
 				<h1 class="title"><%= link_to post.title, post %></h1>

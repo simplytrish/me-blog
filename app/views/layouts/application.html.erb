@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>TracEy</title>
+  <title>Ketchup & Eggs</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  
   <%= stylesheet_link_tag 'application', 'http://fonts.googleapis.com/css?family=Raleway:400,700' %>
+
+  <%= stylesheet_link_tag 'application', 'http://fonts.googleapis.com/css?family=Roboto:400' %>
+  
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
@@ -21,17 +25,15 @@
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
-                    Branding
+                   <%= link_to image_tag("logo2.png", :alt => "logo image", :width => 150, :height => 160), root_path %>
+
                 </li>
-				<li><%= link_to "Home", root_path %></li>
-				<li class="list_border"></li>
-				<li><%= link_to "About", about_path %></li>
-				<li class="list_border"></li>
-				<li><a href="https://www.tadaku.com/my/menus">Cooking Classes</a></li>
+                <br><br><br><br><br><br>
+				<li class="list-style"><%= link_to "HOME", root_path %></li>
+				<li class="list-style"><%= link_to "ABOUT", about_path %></li>
+				<li class="list-style"><a href="https://www.tadaku.com/my/menus">COOKING CLASSES</a></li>
 				<!--<li><%= link_to "https://www.tadaku.com/my/menus", :target => "_blank" %></li>-->
-				<li class="list_border"></li>
-				<li><a href="">Medium</a></li>
-				<li class="list_border"></li>
+				<li class="list-style"><a href="">MEDIUM</a></li>
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
@@ -52,17 +54,17 @@
 	            		
 	            		<div class="header">
 		            		<% if current_page?(root_path) %>
-							 <p>All Posts</p>
+							 <p>ALL POSTS</p>
 								<% elsif current_page?(about_path) %>
-								 <p>About</p>
+								 <p>ABOUT</p>
 								<% else %>
 									<p id="postlink"><%= link_to "All Posts", root_path %></p>
 								<% end %>
 					
 							<% if user_signed_in? %>
 								<div class="button">
-									<button class="btn btn-default" type="button"><%= link_to "New Post", new_post_path%></button>
-									<button class="btn btn-default" type="button"><%= link_to 'log out', destroy_user_session_path, :method => :delete%></button>	
+									<button class="btn btn-default" type="button"><%= link_to "NEW POST", new_post_path%></button>
+									<button class="btn btn-default" type="button"><%= link_to 'LOG OUT', destroy_user_session_path, :method => :delete%></button>	
 								</div>
 							<% end %>
 						</div>        	

@@ -18,9 +18,9 @@
  @import 'normalize';
 
  html, body {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	overflow-x: hidden;
-	background: #f4f4f4;
+	background: #fafafa;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -56,7 +56,8 @@ a {
     height: 100%;
     margin-left: -180px;
     overflow-y: auto;
-    background: url(halftone.png);
+    /*background: url(halftone.png);*/
+    background: #fafafa;
 	padding: 7em 0 0 0;
 	border-right: 1px solid #dcd0c0;
     -webkit-transition: all 0.5s ease;
@@ -89,7 +90,7 @@ a {
 
 .sidebar-nav {
     position: absolute;
-    top: 0;
+    top: 100px;
     width: 180px;
     margin: 0;
     padding: 0;
@@ -104,7 +105,7 @@ a {
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
-    color: #999999;
+    color: #9eafba;
 }
 
 .sidebar-nav li a:hover {
@@ -120,7 +121,6 @@ a {
 
 .sidebar-nav > .sidebar-brand {
     height: 65px;
-    font-size: 18px;
     line-height: 60px;
 }
 
@@ -182,10 +182,6 @@ a {
 	}
 
 
-li {
-	padding: 1em 0;
-}
-
 /*.list_border{
 	border-bottom: 1.5px solid #d6dce0;
 	transform: rotate(-10deg);
@@ -195,8 +191,9 @@ li {
 
 li a {
 	color: #9eafba;
-	font-size: 20px;
+	font-size: 13px;
 	text-decoration: none;
+	text-transform: uppercase;
 	transition: all .4s ease;
 }
 
@@ -208,6 +205,10 @@ li a:active{
 	color: #2d2c2c;
 }
 
+.list-style {
+	padding-left: 20px;
+}
+
 .clearfix:after {
    content: ".";
    visibility: hidden;
@@ -216,9 +217,11 @@ li a:active{
    clear: both;
 }
 
+/**** HEADER STYLE ****/
+
 .header {
-	border-bottom: 1px solid #f4f4f4;
-	background: #f4f4f4;
+	/*border-bottom: 1px solid #dcd0c0;*/
+	background: #fafafa;
 	color: #9eafba;
 	height: 60px;
 	line-height: 60px;
@@ -251,15 +254,18 @@ li a:active{
 	padding-right: 15px;
 }
 
+/**** HEADER STYLE END ****/
+
 
 /**** INDEX PAGE STYLE ****/
 
 .post_wrapper {
-   	/*padding-left: 20px;*/   	
+   	padding-bottom: 10px; 	
 }
 
 .post-info {
-	background: url(restaurant_icons.png);
+	/*background: url(restaurant_icons.png);*/
+	background: #ffffff;
 	height: 580px;
 	font-weight: 500;
 	padding: 8rem;
