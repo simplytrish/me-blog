@@ -39,7 +39,7 @@ class CoverUploader < CarrierWave::Uploader::Base
   # def scale(width, height)
   #   # do something
   # end
-  process :resize_to_fill => [620, 580]
+  process :resize_to_fill => [320, 320]
 
   # Create different versions of your uploaded files:
   #version :thumb do

@@ -1,28 +1,30 @@
 <!-- Loop through each post and put them in post-wrapper-->
 <!-- Then link the title to the post -->
-<% @posts.each do |post| %>
-	<div class="post_wrapper">
-
-		<div class="row">
-
-			<div class="col-lg-6">
-				
-				<%= link_to post do %>
-					<%= image_tag post.cover.url if post.cover?%>
-				<% end %>
-				
-			</div>
 
 
-			<div class="col-lg-6 post-info">
-				<h1 class="title"><%= link_to post.title, post %></h1>
-				<p class="date"><%= post.created_at.strftime("%B %d, %Y") %></p>
-				<p class="profile"><%=raw post.profile %></p>
-				<p class="description"><%=raw post.description %></p>
-			</div>
+<% @posts.each_slice(3) do |posts| %>
 
-		</div>
-	</div> 
+  	<div class="post_wrapper">
+  		
+  		<div class="row intro">
+  			
+  		</div>
+
+	  	<div class="row">
+	    <% posts.each do |post| %>
+	      <div class="col-md-4">
+	      	<%= link_to image_tag post.cover.url if post.cover?%>
+
+	      	<h1 class="title"><%= link_to post.title, post %></h1>
+			<p class="date"><%= post.created_at.strftime("%B %d, %Y") %></p>
+			<p class="profile"><%=raw post.profile %></p>
+			<p class="description"><%=raw post.description %></p>
+	      </div>
+	    <% end %>
+	  	</div>
+
+  	</div>
+
 <% end %>
 
 
