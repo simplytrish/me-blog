@@ -56,7 +56,7 @@ a {
     height: 100%;
     margin-left: -180px;
     overflow-y: auto;
-    /*background: url(halftone.png);*/
+    
     background: #fafafa;
 	padding: 7em 0 0 0;
 	border-right: 1px solid #dcd0c0;
@@ -260,7 +260,11 @@ li a:active{
 /**** INDEX PAGE STYLE ****/
 
 .post_wrapper {
-   	padding-left: 55px;
+   	top:0;
+}
+
+.post_covers {
+	padding-left: 55px;
 }
 
 .post-info {
@@ -271,11 +275,11 @@ li a:active{
 }
 
 .profile {
-	font-weight: 900;
+	font-weight: 300;
 } 
 
 .description p {
-	font-weight: 900;
+	font-weight: 300;
 }
 
 .title {
@@ -284,7 +288,7 @@ li a:active{
 }
 
 .title a {
-	font-weight: 500;
+	font-weight: 300;
 	text-decoration: none;
 	color: #DBCC0A;
 	font-size: 1em;
@@ -293,6 +297,35 @@ li a:active{
 .date_and_author {
 	color: #9eafba;
 	margin: .5em 0 0 0;
+}
+
+.intro {
+	background:url(tomegg3.jpg) no-repeat center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-size:40px;
+	font-weight:300;
+	height:600px;
+	margin-bottom: 130px;
+	padding: 100px 20px;
+	/*padding-left: 20px;
+	padding-right: 20px;*/
+	/*line-height: 450px;*/
+}
+
+.intro p {
+	/*padding-left: 37.5%;*/
+	margin:auto;
+	text-align:center;
+	color: #9c9999;
+	/*width:50%;*/
+}
+
+@media(max-width:700px) {
+	.intro {
+		font-size:30px;
+	}
+
 }
 
 /**** INDEX PAGE STYLE END ****/

@@ -4,13 +4,14 @@
 
 <% @posts.each_slice(3) do |posts| %>
 
-  	<div class="post_wrapper">
   		
   		<div class="row intro">
+  			<!--<p>Cupcake ipsum dolor sit amet icing fruitcake lollipop tootsie roll. Toffee candy canes topping sugar plum. Biscuit icing fruitcake powder cheesecake cupcake.
+  			</p>-->
   			
   		</div>
 
-	  	<div class="row">
+	  	<div class="row post_covers">
 	    <% posts.each do |post| %>
 	      <div class="col-md-4">
 	      	<%= link_to image_tag post.cover.url if post.cover?%>
@@ -22,8 +23,7 @@
 	      </div>
 	    <% end %>
 	  	</div>
-
-  	</div>
+ 	
 
 <% end %>
 

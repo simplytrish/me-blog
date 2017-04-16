@@ -4,7 +4,7 @@
   <title>Ketchup & Eggs</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 
-  <%= stylesheet_link_tag 'application', 'http://fonts.googleapis.com/css?family=Roboto:100,300,400' %>
+  <%= stylesheet_link_tag 'application', 'http://fonts.googleapis.com/css?family=Roboto:100,300' %>
   
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -50,7 +50,7 @@
             	<div class="row">
             		<div class="col-lg-12 nopadding">
 	            		
-	            		<div class="header">
+	            		<!--<div class="header">
 		            		<% if current_page?(root_path) %>
 							 <p>ALL POSTS</p>
 								<% elsif current_page?(about_path) %>
@@ -65,7 +65,7 @@
 									<button class="btn btn-default" type="button"><%= link_to 'LOG OUT', destroy_user_session_path, :method => :delete%></button>	
 								</div>
 							<% end %>
-						</div>        	
+						</div>-->        	
 	          		</div>
            
 
