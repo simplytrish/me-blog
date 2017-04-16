@@ -30,8 +30,6 @@
 				<li class="list-style"><%= link_to "HOME", root_path %></li>
 				<li class="list-style"><%= link_to "ABOUT", about_path %></li>
 				<li class="list-style"><a href="https://www.tadaku.com/my/menus">COOKING CLASSES</a></li>
-				<!--<li><%= link_to "https://www.tadaku.com/my/menus", :target => "_blank" %></li>-->
-				<li class="list-style"><a href="">MEDIUM</a></li>
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
@@ -56,7 +54,7 @@
 								<% elsif current_page?(about_path) %>
 								 <p>ABOUT</p>
 								<% else %>
-									<p id="postlink"><%= link_to "All Posts", root_path %></p>
+									<p id="postlink"><%= link_to "ketchup and eggs", root_path %></p>
 								<% end %>
 					
 							<% if user_signed_in? %>
