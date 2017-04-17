@@ -1,18 +1,6 @@
 <!-- Loop through each post and put them in post-wrapper-->
 <!-- Then link the title to the post -->
 
-<!DOCTYPE html>
-<html>
-
-<head>
-	<!-- Bootstrap -->
-  <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
-  <link href="/assets/bootstrap.min.css" media="all" rel="stylesheet" />
-
-   <%= stylesheet_link_tag    "/assets/bootstrap.min.css" %>
-</head>
-
-<body>
 
 <% @posts.each_slice(3) do |posts| %>
 
@@ -39,9 +27,6 @@
 
 <% end %>
 
-</body>
-
-</html>
 
 
 
