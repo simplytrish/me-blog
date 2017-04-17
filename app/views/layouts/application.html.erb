@@ -2,21 +2,25 @@
 <html>
 <head>
   <title>Ketchup & Eggs</title>
-  
+
+
+  <!--Styling-->
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-
-  <%= stylesheet_link_tag 'application', 'http://fonts.googleapis.com/css?family=Roboto:100,300' %>
-
   <%= stylesheet_link_tag    "/assets/bootstrap.min.css" %>
-  
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-
-  <%= javascript_include_tag "/assets/bootstrap.min.js" %>
 
   <!-- Bootstrap -->
-  <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="/assets/bootstrap.min.css" media="all" rel="stylesheet" />
+
+  <!--Fonts-->
+  <%= stylesheet_link_tag 'application', 'http://fonts.googleapis.com/css?family=Roboto:100,300' %>
+
+  <!--Scripts-->
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <%= javascript_include_tag "/assets/bootstrap.min.js" %>
+
+  
 </head>
 
 
@@ -73,12 +77,12 @@
 	          		</div>
            
 
-                <div class="row">
+                <!--<div class="row">
                     <div class="col-lg-12">
-                        <!--<a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>-->
+                        <!--<a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
                     </div>
                 </div>
-            </div>
+            </div>-->
         </div>
         <!-- /#page-content-wrapper -->
 
