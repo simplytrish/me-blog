@@ -14,8 +14,6 @@
  *= require_self
  *= require bootstrap.min
  */
- //= depend_on_asset "tomegg3.jpg"
-
 
 
  html, body {
@@ -260,7 +258,7 @@ li a:active{
 
 /**** INDEX PAGE STYLE ****/
 
-.post_wrapper {
+#post_wrapper {
    	top:0;
 }
 
@@ -301,7 +299,7 @@ li a:active{
 }
 
 .intro {
-	background:url('<%= asset_path("tomegg3.jpg") %> ') no-repeat center center;
+	background:url('tomegg3.jpg') no-repeat center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	font-size:40px;

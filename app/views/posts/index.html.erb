@@ -1,11 +1,13 @@
 <!-- Loop through each post and put them in post-wrapper-->
 <!-- Then link the title to the post -->
 
+<div id="post-wrapper">
 
 <% @posts.each_slice(3) do |posts| %>
 
   		
   		<div class="row intro">
+
   			<p>Cupcake ipsum dolor sit amet icing fruitcake lollipop tootsie roll. Toffee candy canes topping sugar plum. Biscuit icing fruitcake powder cheesecake cupcake.
   			</p>
   		</div>
@@ -25,6 +27,8 @@
  	
 
 <% end %>
+
+</div>
 
 
 
