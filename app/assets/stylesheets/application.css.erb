@@ -299,7 +299,10 @@ li a:active{
 }
 
 .intro {
-	background:url('tomegg3.jpg') no-repeat center center;
+
+	/*background:image-url("tomegg3.jpg") no-repeat center center;*/
+	background-image:url('<%= asset_path("tomegg3.jpg") %> ');
+	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	font-size:40px;
@@ -311,6 +314,7 @@ li a:active{
 	padding-right: 20px;*/
 	/*line-height: 450px;*/
 }
+
 
 .intro p {
 	/*padding-left: 37.5%;*/
