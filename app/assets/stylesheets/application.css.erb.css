@@ -14,6 +14,7 @@
  *= require_self
  *= require bootstrap.min
  */
+ //= depend_on_asset "tomegg3.jpg"
 
 
 
@@ -300,7 +301,7 @@ li a:active{
 }
 
 .intro {
-	background:url(tomegg3.jpg) no-repeat center center;
+	background:url('<%= asset_path("tomegg3.jpg") %> ') no-repeat center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	font-size:40px;
