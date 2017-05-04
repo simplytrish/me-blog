@@ -3,14 +3,14 @@
 
 <div id="post-wrapper">
 
-<% @posts.each_slice(3) do |posts| %>
+	<div class="row intro">
 
+  		<p>My space for learning, creating and experiencing food techniques, ingredients and tastes...
+  		</p>
   		
-  		<div class="row intro">
+  	</div>
 
-  			<p>My space for learning, creating and experiencing food techniques, ingredients and tastes...
-  			</p>
-  		</div>
+<% @posts.each_slice(3) do |posts| %>
 
 	  	<div class="row post_covers">
 	    <% posts.each do |post| %>
