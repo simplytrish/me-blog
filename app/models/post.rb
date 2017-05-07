@@ -6,5 +6,6 @@ class Post < ActiveRecord::Base
 	validates :title, presence: true, length: {minimum: 5}
 	validates :body, presence: true
 	mount_uploader :cover, CoverUploader
+	mount_uploader :showcover, ShowcoverUploader
 end
 

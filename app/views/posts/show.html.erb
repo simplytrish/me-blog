@@ -12,6 +12,10 @@
 		<% end %>
 	</p>
 
+	<div class="row show_img">
+		<%= image_tag @post.showcover.url if @post.showcover? %>
+	</div>
+
 	<p class="body">
 		<%=raw @post.body %>
 	</p>
