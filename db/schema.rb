@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170120151800) do
+ActiveRecord::Schema.define(version: 20170507021005) do
 
   create_table "comments", force: :cascade do |t|
     t.string   "name",       limit: 255
@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 20170120151800) do
     t.datetime "updated_at",                null: false
     t.text     "profile",     limit: 65535
     t.text     "description", limit: 65535
+    t.text     "recipe",      limit: 65535
   end
 
   create_table "users", force: :cascade do |t|
