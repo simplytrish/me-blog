@@ -13,7 +13,9 @@
 	</p>
 
 	<div class="row show_img">
-		<%= image_tag @post.showcover.url if @post.showcover? %>
+		<div class= "col-md-12">
+			<%= image_tag @post.showcover.url, :class => "imgshow" if @post.showcover? %>
+		</div>
 	</div>
 
 	<p class="body">
