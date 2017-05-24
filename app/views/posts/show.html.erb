@@ -22,9 +22,13 @@
 		<%=raw @post.body %>
 	</p>
 
+
+	<!--Only show recipe section if there is one -->
+	<% unless @post.recipe.blank? %>
 	<p class="recipe">
-		<div id="recipe_style"><%=raw @post.recipe %></div>
+		<div class="recipe_style"><%=raw @post.recipe %></div>
 	</p>
+	<% end %>
 
 	
 	<!--
