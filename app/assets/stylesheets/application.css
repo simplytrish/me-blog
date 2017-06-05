@@ -289,9 +289,10 @@ li a:active{
 	margin: .5em 0 0 0;
 }
 
-.my-name {
+.my-name p{
 	text-align: center;
 	font-size: 40px;
+	padding: 0px 10px 0px 10px;
 }
 
 ul {

@@ -16,7 +16,7 @@
   		<ul>
   		<li id="home-link"><%= link_to "HOME", root_path %></li>
   		<li id="about-link"><%= link_to "ABOUT", about_path %></li>
-  		<li id="contact-link">CONTACT</li>
+  		<li id="contact-link"><%= link_to "CONTACT", contact_path %></li>
   		</ul>
   		</div>
   	</div>
@@ -28,8 +28,8 @@
 	      <div class="col-md-4">
 	      	<%= link_to image_tag post.cover.url if post.cover?%>
 
-	      	<h1 class="title"><%= link_to post.title, post %></h1>
-			<p class="date"><%= post.created_at.strftime("%B %d, %Y") %></p>
+	      	<h4 class="title"><%= link_to post.title, post %></h1>
+			<!--<p class="date"><%= post.created_at.strftime("%B %d, %Y") %></p>-->
 			<p class="profile"><%=raw post.profile %></p>
 			<p class="description"><%=raw post.description %></p>
 	      </div>
