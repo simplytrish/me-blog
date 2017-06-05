@@ -36,14 +36,12 @@ a {
 
 /* Toggle Styles */
 
-#wrapper {
-    padding-left: 0;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+.page-wrapper {
+ 	padding: 0px 230px 0px 230px;
 }
 
+
+/*
 #wrapper.toggled {
     padding-left: 180px;
 }
@@ -73,20 +71,20 @@ a {
 #page-content-wrapper {
     width: 100%;
     position: absolute;
-    /*padding-left:15px;*/
-}
+    /*padding-left:15px;
+}*/
 
 .nopadding {
 	padding: 0 !important;
 }
 
-
+/*
 #wrapper.toggled #page-content-wrapper {
     position: absolute;
     margin-right: -180px;
-}
+}*/
 
-/* Sidebar Styles */
+/* Sidebar Styles 
 
 .sidebar-nav {
     position: absolute;
@@ -151,7 +149,7 @@ a {
     }
 
     #page-content-wrapper { 
-        /*padding-left: 15px;*/
+        /*padding-left: 15px;
         position: relative;
     }
 
@@ -159,7 +157,7 @@ a {
         position: relative;
         margin-right: 0;
     }
-}
+}*/
 
 /* NEW STYLE END */
 
@@ -252,12 +250,12 @@ li a:active{
 
 /**** INDEX PAGE STYLE ****/
 
-#post_wrapper {
+.post-wrapper {
    	top:0;
 }
 
 .post_covers {
-	padding-left: 55px;
+	padding-left: 0px !important;
 }
 
 .post-info {
@@ -291,9 +289,26 @@ li a:active{
 	margin: .5em 0 0 0;
 }
 
-.intro {
+.my-name {
+	text-align: center;
+	font-size: 40px;
+}
 
-	/*background:image-url("tomegg3.jpg") no-repeat center center;*/
+ul {
+	list-style: none;
+	text-align: center;
+}
+
+.page-links li {
+	display: inline-block;
+}
+
+li a {
+	padding:10px;
+}
+/*.intro {
+
+	/*background:image-url("tomegg3.jpg") no-repeat center center;
 	background-image:url('<%= asset_path("tomegg3.jpg") %> ');
 	background-position: center;
 	background-repeat: no-repeat;
@@ -305,8 +320,8 @@ li a:active{
 	padding: 100px 20px;
 	/*padding-left: 20px;
 	padding-right: 20px;*/
-	/*line-height: 450px;*/
-}
+	/*line-height: 450px;
+}*/
 
 
 .intro p {

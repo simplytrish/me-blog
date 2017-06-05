@@ -1,13 +1,24 @@
 <!-- Loop through each post and put them in post-wrapper-->
 <!-- Then link the title to the post -->
 
-<div id="post-wrapper">
+<div class="page-wrapper">
+	<div class="row">
+		<div class="col-lg-12 my-name">
+		<p>TRACEY NORKJAER</p>
+		</div>
 
-	<div class="row intro">
-
-  		<p>My space for learning, creating and experiencing food techniques, ingredients and tastes...
-  		</p>
+  		<!--<p>My space for learning, creating and experiencing food techniques, ingredients and tastes...
+  		</p>-->
   		
+  	</div>
+  	<div class="row">
+  		<div class="col-lg-12 page-links">
+  		<ul>
+  		<li id="home-link"><%= link_to "HOME", root_path %></li>
+  		<li id="about-link"><%= link_to "ABOUT", about_path %></li>
+  		<li id="contact-link">CONTACT</li>
+  		</ul>
+  		</div>
   	</div>
 
 <% @posts.each_slice(3) do |posts| %>
@@ -25,10 +36,9 @@
 	    <% end %>
 	  	</div>
  	
-
 <% end %>
-
 </div>
+
 
 
 
