@@ -40,6 +40,12 @@ a {
  	padding: 0px 230px 0px 230px;
 }
 
+@media(max-width:700px) {
+	.page-wrapper {
+		padding: 0px 10px 0px 10px;
+	}
+
+}
 
 /*
 #wrapper.toggled {
@@ -210,8 +216,7 @@ li a:active{
 
 /**** HEADER STYLE ****/
 
-.header {
-	/*border-bottom: 1px solid #dcd0c0;*/
+#header {
 	background: #fafafa;
 	color: #9eafba;
 	height: 60px;
@@ -219,25 +224,24 @@ li a:active{
 	
 }
 
-.header p {
+#header p {
 	display: inline;
-	padding-left:25px;
 }
 		
-.header a {
+#header a {
 	color: #9eafba;
 	text-decoration: none;
 }
 
-.header a:postlink {
+#header a:postlink {
 	color: #9eafba;
 	text-decoration: none;
-	padding-left:25px;
 }
 
-.header a:hover {
+#header a:hover {
 	color: #ff1f00;
 }
+
 
 .button {
 	font-size: .8em;
@@ -335,8 +339,12 @@ li a {
 }
 
 @media(max-width:700px) {
-	.intro {
-		font-size:30px;
+	.post_covers {
+		text-align: center;
+	}
+
+	.description {
+		text-align: center;
 	}
 
 }
@@ -348,6 +356,15 @@ li a {
 	padding-left: 100px;
 	padding-right: 100px;
 	border-top: 1px solid;
+}
+
+.show-title {
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.show-date {
+	text-align: center;
 }
 
 /*.title {
@@ -373,15 +390,11 @@ li a {
 	
 }
 
-@media(max-width:992px) {
+@media(max-width:700px) {
 	.imgshow {
 		height:50%;
 	}
-	.post_content {
-	padding-left: 0px;
-	padding-right: 0px;
 }
-	}
 
 .recipe_style {
 	border: 1px solid;
@@ -395,11 +408,6 @@ li a {
 }
 
 /**** SHOW PAGE STYLE END ****/
-
-
-.page_wrapper {
-	padding-left: 25px;
-}
 		
 
 .links {

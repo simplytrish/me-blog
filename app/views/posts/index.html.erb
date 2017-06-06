@@ -24,16 +24,16 @@
 <% @posts.each_slice(3) do |posts| %>
 
 	  	<div class="row post_covers">
-	    <% posts.each do |post| %>
-	      <div class="col-md-4">
-	      	<%= link_to image_tag post.cover.url if post.cover?%>
+		    <% posts.each do |post| %>
+		      <div class="col-md-4">
+		      	<%= link_to image_tag post.cover.url if post.cover?%>
 
-	      	<h4 class="title"><%= link_to post.title, post %></h1>
-			<!--<p class="date"><%= post.created_at.strftime("%B %d, %Y") %></p>-->
-			<p class="profile"><%=raw post.profile %></p>
-			<p class="description"><%=raw post.description %></p>
-	      </div>
-	    <% end %>
+		      	<h4 class="title"><%= link_to post.title, post %></h1>
+				<!--<p class="date"><%= post.created_at.strftime("%B %d, %Y") %></p>-->
+				<p class="profile"><%=raw post.profile %></p>
+				<p class="description"><%=raw post.description %></p>
+		      </div>
+		    <% end %>
 	  	</div>
  	
 <% end %>
