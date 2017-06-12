@@ -3,9 +3,7 @@
   config.fog_credentials = {
     :provider               => "AWS",                        # required
     :aws_access_key_id      => "AWS_KEY_ID",                        # required
-    :aws_secret_access_key  => "AWS_KEY",                        # required
-    :region                 => "asia pacific (tokyo)", 
-    :endpoint               => "https://kande-bucket.s3-asia pacific (tokyo).amazonaws.com)"  # optional, defaults to 'us-east-1'
+    :aws_secret_access_key  => "AWS_KEY"                        # required
   }
   config.fog_directory  = 'kande-bucket'                     # required
   config.fog_public     = false                                   # optional, defaults to true
