@@ -28,6 +28,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 # carrierwave for uploader
 gem 'carrierwave'
+# fog for aws image uploading
+gem 'fog', require: 'fog/aws'
 # rmagick for image processing
 gem 'rmagick'
 # text editor for posts

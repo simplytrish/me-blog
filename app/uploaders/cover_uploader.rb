@@ -10,10 +10,20 @@ class CoverUploader < CarrierWave::Uploader::Base
   #include Cloudinary::CarrierWave
 
   # Choose what kind of storage to use for this uploader:
-  storage :file
-  storage :dropbox
 
-  # storage :fog
+
+  # Use AWS storage if in production
+  if Rails.env.production?
+    storage :fog
+  else
+    storage :file
+  end
+
+
+  # Use local storage if in development or test
+  #storage :dropbox
+  #storage :fog
+
 
   # Override the directory where uploaded files will be stored.
   # This is a sensible default for uploaders that are meant to be mounted:
