@@ -412,7 +412,48 @@ li a {
 }
 
 /**** SHOW PAGE STYLE END ****/
-		
+
+/**** CONTACT PAGE STYLE ****/
+
+.contact-image {
+	text-align: center;	
+}
+
+.image-contact {
+	padding: 30px 0px 20px 0px;
+}
+
+.contact-info {
+	text-align: center;
+}
+
+.contact-info li {
+	text-align: center;
+	display: inline-block;
+	font-size: 1.5em;
+}
+/**** CONTACT PAGE STYLE END ****/
+
+/**** ABOUT PAGE STYLE ****/
+
+.about-image {
+	text-align: center;	
+}
+
+.image-about {
+	padding: 30px 0px 20px 0px;
+}
+
+.about-info {
+	text-align: center;
+}
+
+.about-info {
+	text-align: center;
+	display: inline-block;
+	font-size: 1em;
+}
+/**** ABOUT PAGE STYLE END ****/	
 
 .links {
 		margin: 2em 0;
