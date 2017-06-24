@@ -96,6 +96,7 @@ a {
 
 .nopadding {
 	padding: 0 !important;
+	margin: 0 !important;
 }
 
 /*
@@ -310,7 +311,7 @@ li a:active{
 .my-name p{
 	text-align: center;
 	font-size: 40px;
-	padding: 0px 10px 0px 10px;
+	/*padding: 0px 10px 0px 10px;*/
 }
 
 ul {
@@ -320,10 +321,11 @@ ul {
 
 .page-links li {
 	display: inline-block;
+	text-align: center;
 }
 
 li a {
-	padding:10px;
+	/*padding:10px;*/
 }
 /*.intro {
 
