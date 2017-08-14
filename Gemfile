@@ -43,6 +43,9 @@ gem 'figaro'
 
 gem 'dropbox-sdk'
 
+#page transitions
+gem 'turbolinks_transitions'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

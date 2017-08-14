@@ -1,6 +1,7 @@
 <!-- Loop through each post and put them in post-wrapper-->
 <!-- Then link the title to the post -->
 
+<div id="primary-content">
 <div class="page-wrapper">
 	<!--<div class="row">
 		<div class="col-lg-12 my-name nopadding">
@@ -28,7 +29,7 @@
 		      <div class="col-md-4">
 		      	<%= link_to image_tag post.cover.url if post.cover?%>
 
-		      	<h4 class="title"><%= link_to post.title, post %></h1>
+		      	<h4 class="title"><%= link_to post.title, post %></h4>
 				<!--<p class="date"><%= post.created_at.strftime("%B %d, %Y") %></p>-->
 				<p class="profile"><%=raw post.profile %></p>
 				<p class="description"><%=raw post.description %></p>
@@ -37,6 +38,21 @@
 	  	</div>
  	
 <% end %>
+
+<script src="https://aja.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+
+	document.addEventListener('page:change', function() 
+	{
+        document.getElementById('primary-content').className += 'animated fadeIn';
+	});
+	document.addEventListener('page:fetch', function() 
+	{
+        document.getElementById('primary-content').className += 'animated fadeOut';
+	});
+
+</script>
+</div>
 </div>
 
 
